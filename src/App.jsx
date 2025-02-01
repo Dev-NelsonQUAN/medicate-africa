@@ -6,18 +6,33 @@ import AboutUs from './components/pages/AboutUs'
 import Facilities from './components/pages/Facilities'
 import AboutDetails from './components/pages/AboutDetails'
 import Services from './components/pages/Services'
+import Portfolio from './components/pages/Portfolio'
+import Steps from './components/pages/Steps'
+import OurTeam from './components/pages/OurTeam'
+import Appointment from './components/pages/Appointment'
+import GlobalLayout from './layout/GlobalLayout'
+import OurClients from './components/pages/OurClients'
+import OurBlog from './components/pages/OurBlog'
+import Footer from './components/static/Footer'
 
 const App = () => {
   return (
-    <div>
-      <Header/>
+    <GlobalLayout>
+      <Header />
       <Heropage />
       <AfterHero />
       <AboutUs />
       <Facilities />
       <AboutDetails />
       <Services />
-    </div>
+      <Portfolio />
+      <Steps />
+      <OurTeam />
+      <Appointment />
+      <OurClients />
+      <OurBlog />
+      <Footer />
+    </GlobalLayout>
   )
 }
 

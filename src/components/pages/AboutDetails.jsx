@@ -8,19 +8,29 @@ import { LiaStethoscopeSolid } from "react-icons/lia";
 
 const AboutDetails = () => {
   return (
-    <div className='relative flex'>
-      <div className='bg-[#F4F6F9] w-1/2 h-205'></div>
-      <div className='bg-[#14457B] w-1/2 h-205'> </div>
+    <div className='relative lg:flex'>
+      <div className='bg-[#F4F6F9] lg:w-1/2 lg:h-205
+          md:w-full md:h-240 
+          '></div>
+      <div className='bg-[#14457B] lg:w-1/2 lg:h-205
+      md:w-full md:h-50 md:pr-50 lg:pr-0
+      '> </div>
 
-      <div className='flex absolute top-40 left-35 gap-0'>
+      <div className='flex absolute lg:top-40 lg:left-35 lg:gap-0 
+       lg:flex-row md:flex-col md:left-8 md:top-22 md:gap-10
+      '>
         <div className='w-130'>
-          <div className='pr-106'> 
+          <div className='flex'> 
             <Title> ABOUT US </Title>
           </div>
 
           <div>
-            <h4 className='font-medium text-5xl w-105 leading-15 mt-4 '>Joining Hands with Eradicating illness </h4>
-            <p className='text-s font-light w-120 leading-loose mt-4 '>
+            <h4 className='font-medium lg:text-5xl lg:w-105 leading-15 mt-4 
+            md:text-5xl md:w-175
+            '>Joining Hands to Eradicate illness </h4>
+            <p className='text-s font-light lg:w-120  
+            md:w-165
+            leading-loose mt-4 '>
               Medicate is here for you, waving goodbye to the illness you always experience, with God's grace, We bring health in full,for Jesus paid in full.
             </p>
           </div>
@@ -33,23 +43,29 @@ const AboutDetails = () => {
             </div>
             <div>
               <h6 className='font-medium text-3xl'>Infection Prevention </h6>
-              <p className='text-s font-light mt-4 w-89'> There are many variations of passages of patients in with us </p>
+              <p className='text-s font-light lg:mt-4 
+              md:mt-2
+              lg:w-89 md:100'> There are many variations of passages of patients in with us </p>
             </div>
           </div>
 
-          <div className='pr-90 mt-15'>
+          <div className='flex mt-15'>
             <Btn> READ MORE <FaPlus /> </Btn>
           </div>
         </div>
 
-        <div className='flex'>
-          <div className='w-135'>
+        <div className='flex lg:flex-row md:flex-col
+        md:justify-center items-center md:gap-20
+        '>
+          <div className='lg:w-135 md:w-177 lg:h-128'>
             <img 
               className='size-full object-cover'
             src={img} alt="Doctor And Patient" />
           </div>
 
-            <div className='px-6 flex flex-col justify-center gap-7'>
+            <div className='lg:px-6 flex lg:flex-col md:flex-row justify-center gap-7
+            md:bg-[#14457B]
+            '>
               <div className='flex flex-col items-center'>
                 <h5 className='font-medium text-[#1B4B7F] text-4xl '> 450+ </h5>
                 <h5 className='font-medium text-white text-4xl'> 450+ </h5>

@@ -10,16 +10,18 @@ import docThree from '../../assets/happy-afro-kid-regular-check-up-teeth-dental-
 
 const Facilities = () => {
     return (
-        <div className='px-34 py-28'>
+        <div className='lg:px-34 lg:py-28 md:px-8
+        md:py-25
+        '>
             <div className='flex flex-col items-center'>
                 <div>
                     <Title>FACILITIES WE HAVE </Title>
                 </div>
 
-                <h2 className='font-medium text-5xl mt-4'> What Facilities We Provided </h2>
+                <h2 className='font-medium lg:text-5xl mt-4 md:text-5xl'> What Facilities We Provided </h2>
             </div>
 
-            <div className='flex gap-8 mt-12'>
+            <div className='flex gap-8 mt-12 flex-wrap justify-center'>
                 <FacilitiesCard
                     facilitiesImg={docOne}
                     medical='MEDICAL SURGERY'
